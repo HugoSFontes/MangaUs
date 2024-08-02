@@ -1,0 +1,60 @@
+CREATE TABLE Usuarios (
+    usuario_id SERIAL PRIMARY KEY,
+    nome_usuario VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    hash_senha VARCHAR(255) NOT NULL,
+    dt_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Manga (
+    manga_id SERIAL PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    genero VARCHAR(255),
+    descricao TEXT,
+    capa_manga BYTEA, 
+    dt_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Capitulos (
+    capitulo_id SERIAL PRIMARY KEY,
+    manga_id INT NOT NULL,
+    numero_capitulo INT NOT NULL,
+    titulo VARCHAR(255),
+    dt_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    FOREIGN KEY (manga_id) REFERENCES Manga(manga_id)
+);
+
+CREATE TABLE Paginas (
+    pagina_id SERIAL PRIMARY KEY,
+    capitulo_id INT NOT NULL,
+    numero_pagina INT NOT NULL,
+    url_imagem VARCHAR(255) NOT NULL,
+    dt_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    FOREIGN KEY (capitulo_id) REFERENCES Capitulos(capitulo_id)
+);
+
+CREATE TABLE Favoritos (
+    favorito_id SERIAL PRIMARY KEY,
+    usuario_id INT NOT NULL,
+    manga_id INT NOT NULL,
+    dt_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id),
+    FOREIGN KEY (manga_id) REFERENCES Manga(manga_id)
+);
+
+CREATE TABLE ProgressoLeitura (
+    progresso_id SERIAL PRIMARY KEY,
+    usuario_id INT NOT NULL,
+    manga_id INT NOT NULL,
+    capitulo_id INT NOT NULL,
+    numero_pagina INT NOT NULL,
+    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id),
+    FOREIGN KEY (manga_id) REFERENCES Manga(manga_id),
+    FOREIGN KEY (capitulo_id) REFERENCES Capitulos(capitulo_id)
+);
