@@ -7,15 +7,21 @@ CREATE TABLE Usuarios (
     dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE Generos (
+    genero_id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
+);
+
 CREATE TABLE Manga (
     manga_id SERIAL PRIMARY KEY,
     titulo VARCHAR(255) NOT NULL,
     autor VARCHAR(255) NOT NULL,
-    genero VARCHAR(255),
+    genero_id INT,
     descricao TEXT,
-    capa_manga BYTEA, 
+    capa_manga BYTEA, -- Campo para armazenar a imagem
     dt_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (genero_id) REFERENCES Generos(genero_id)
 );
 
 CREATE TABLE Capitulos (
@@ -24,7 +30,7 @@ CREATE TABLE Capitulos (
     numero_capitulo INT NOT NULL,
     titulo VARCHAR(255),
     dt_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (manga_id) REFERENCES Manga(manga_id)
 );
 
@@ -34,7 +40,7 @@ CREATE TABLE Paginas (
     numero_pagina INT NOT NULL,
     url_imagem VARCHAR(255) NOT NULL,
     dt_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (capitulo_id) REFERENCES Capitulos(capitulo_id)
 );
 
@@ -53,15 +59,10 @@ CREATE TABLE ProgressoLeitura (
     manga_id INT NOT NULL,
     capitulo_id INT NOT NULL,
     numero_pagina INT NOT NULL,
-    dt_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id),
     FOREIGN KEY (manga_id) REFERENCES Manga(manga_id),
     FOREIGN KEY (capitulo_id) REFERENCES Capitulos(capitulo_id)
-);
-
-CREATE TABLE Generos (
-    genero_id SERIAL PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL
 );
 
 INSERT INTO Generos (nome) VALUES ('Ação');
@@ -70,4 +71,3 @@ INSERT INTO Generos (nome) VALUES ('Comédia');
 INSERT INTO Generos (nome) VALUES ('Drama');
 INSERT INTO Generos (nome) VALUES ('Fantasia');
 INSERT INTO Generos (nome) VALUES ('Terror');
-
