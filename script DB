@@ -58,3 +58,16 @@ CREATE TABLE ProgressoLeitura (
     FOREIGN KEY (manga_id) REFERENCES Manga(manga_id),
     FOREIGN KEY (capitulo_id) REFERENCES Capitulos(capitulo_id)
 );
+
+CREATE TABLE Generos (
+    genero_id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
+);
+
+INSERT INTO Generos (nome) VALUES ('Ação');
+INSERT INTO Generos (nome) VALUES ('Aventura');
+INSERT INTO Generos (nome) VALUES ('Comédia');
+INSERT INTO Generos (nome) VALUES ('Drama');
+INSERT INTO Generos (nome) VALUES ('Fantasia');
+INSERT INTO Generos (nome) VALUES ('Terror');
+
