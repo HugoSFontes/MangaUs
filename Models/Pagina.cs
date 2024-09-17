@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MangaUs.Models
 {
+    [Table("Paginas")]
     public class Pagina
     {
 
-        [Key]
-        public int PaginaId { get; set; }
+        [Key] public int PaginaId { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
         public int CapituloId { get; set; }
@@ -17,14 +17,7 @@ namespace MangaUs.Models
 
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
         [MaxLength(255)]
-
         public string UrlImagem { get; set; }
-
-
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public DateTime DtCriacao { get; set; }
-        
-
-        public Capitulo Capitulo { get; set; }
     }
 }
+

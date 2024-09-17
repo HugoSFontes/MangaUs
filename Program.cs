@@ -6,15 +6,21 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<MangaDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MangaDbContext") ?? throw new InvalidOperationException("Connection string 'MangaDbContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("conexaoPadrao") ?? throw new InvalidOperationException("Connection string 'conexaoPadrao' not found.")));
 
 var app = builder.Build();
+
+// Apply migrations on startup
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<MangaDbContext>();
+    dbContext.Database.Migrate(); // Aplica as migrações
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

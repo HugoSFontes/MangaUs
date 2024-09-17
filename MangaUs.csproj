@@ -11,12 +11,79 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\UsuarioDBContext.cs" />
+    <Compile Remove="Models\Favorito.cs" />
+    <Compile Remove="Pages\CapitulosCRUD\**" />
+    <Compile Remove="Pages\GeneroCRUD\**" />
+    <Compile Remove="Pages\MangaCRUD\**" />
+    <Compile Remove="Pages\PaginaCRUD\**" />
+    <Compile Remove="Pages\UsuarioCRUD\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\MangaCRUD\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\MangaCRUD\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\MangaCRUD\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\MangaCRUD\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\MangaCRUD\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\CapitulosCRUD\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\CapitulosCRUD\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\CapitulosCRUD\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\CapitulosCRUD\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\CapitulosCRUD\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\GeneroCRUD\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\GeneroCRUD\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\GeneroCRUD\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\GeneroCRUD\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\GeneroCRUD\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\PaginaCRUD\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\PaginaCRUD\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\PaginaCRUD\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\PaginaCRUD\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\PaginaCRUD\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\UsuarioCRUD\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\UsuarioCRUD\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\UsuarioCRUD\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\UsuarioCRUD\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\UsuarioCRUD\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Pages\CapitulosCRUD\**" />
+    <EmbeddedResource Remove="Pages\GeneroCRUD\**" />
+    <EmbeddedResource Remove="Pages\MangaCRUD\**" />
+    <EmbeddedResource Remove="Pages\PaginaCRUD\**" />
+    <EmbeddedResource Remove="Pages\UsuarioCRUD\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\CapitulosCRUD\**" />
+    <Content Remove="Pages\GeneroCRUD\**" />
+    <Content Remove="Pages\MangaCRUD\**" />
+    <Content Remove="Pages\PaginaCRUD\**" />
+    <Content Remove="Pages\UsuarioCRUD\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\CapitulosCRUD\**" />
+    <None Remove="Pages\GeneroCRUD\**" />
+    <None Remove="Pages\MangaCRUD\**" />
+    <None Remove="Pages\PaginaCRUD\**" />
+    <None Remove="Pages\UsuarioCRUD\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\MangasCRUD\" />
   </ItemGroup>
 
 </Project>

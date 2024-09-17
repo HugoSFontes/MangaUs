@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MangaUs.Models
-{
+{[Table("ProgressoLeituras")]
     public class ProgressoLeitura
     {
         
@@ -20,10 +20,6 @@ namespace MangaUs.Models
 
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime AtualizadoEm { get; set; }
-
         
-        public Usuario Usuario { get; set; }
-        public Manga Manga { get; set; }
-        public Capitulo Capitulo { get; set; }
     }
 }
