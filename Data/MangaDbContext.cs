@@ -1,24 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using MangaUs.Models;
 
 namespace MangaUs.Data
 {
     public class MangaDbContext : DbContext
     {
-        public MangaDbContext (DbContextOptions<MangaDbContext> options) : base(options)
+        public MangaDbContext(DbContextOptions<MangaDbContext> options) 
+            : base(options)
         {
         }
 
-        public DbSet<Manga> Mangas { get; set; } = default!;
-        public DbSet<Usuario> Usuarios { get; set; } = default!;
-        public DbSet<ProgressoLeitura>ProgressoLeituras { get; set; } = default!;
-        public DbSet<Genero> Generos { get; set; } = default!;
-        public DbSet<Capitulo> Capitulos { get; set; } = default!;
-        public DbSet<Pagina> Paginas { get; set; } = default!;
-        
+        // Definindo DbSets para as classes
+        public DbSet<Manga> Mangas { get; set; }
+        public DbSet<Capitulo> Capitulos { get; set; }
+        public DbSet<Pagina> Paginas { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Configurando relacionamento Manga -> Capitulo (1:N)
+            modelBuilder.Entity<Capitulo>()
+                .HasOne(c => c.Manga)
+                .WithMany(m => m.Capitulos)
+                .HasForeignKey(c => c.MangaId)
+                .OnDelete(DeleteBehavior.Cascade); // Configurando cascata
+
+            // Configurando relacionamento Capitulo -> Pagina (1:N)
+            modelBuilder.Entity<Pagina>()
+                .HasOne(p => p.Capitulo)
+                .WithMany(c => c.Paginas)
+                .HasForeignKey(p => p.CapituloId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

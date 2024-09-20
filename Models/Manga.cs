@@ -1,40 +1,36 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MangaUs.Models
-{[Table("Mangas")]
+{
+    [Table("Mangas")]
     public class Manga
     {
-
         [Key]
         public int MangaId { get; set; }
-        
+
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
-        [MaxLength(100)]
         public string Titulo { get; set; }
-        
+
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
-        [MaxLength(100)]
         public string Autor { get; set; }
-        
-        [Required]
-        public int GeneroId { get; set; }
-        
+
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
-        [Column(TypeName = "text")]
+        public string Genero { get; set; }
+
+        [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
         public string Descricao { get; set; }
 
-        [Required]
-        [MaxLength(255)]
-        public string CapaManga { get; set; } 
-        
-        [Required]
-        public int UsuarioId { get; set; }
+        [DisplayName("Capa do Manga")]
+        public byte[] CapaManga { get; set; } // Para armazenar a imagem diretamente como byte[]
 
-        [DataType(DataType.Date)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime DtCriacao { get; set; }
-        
+        [DisplayName("Data de Criação")]
+        public DateTime DtCriacao { get; set; } = DateTime.Now; // Gerada automaticamente
+
+        // Relacionamento com capítulos
+        public ICollection<Capitulo> Capitulos { get; set; }
     }
 }

@@ -14,60 +14,46 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Manga[0].Titulo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Manga[0].Autor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Manga[0].GeneroId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Manga[0].Descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Manga[0].CapaManga)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Manga[0].UsuarioId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Manga[0].DtCriacao)
-            </th>
+            <th>@Html.DisplayNameFor(model => model.Manga[0].Titulo)</th>
+            <th>@Html.DisplayNameFor(model => model.Manga[0].Autor)</th>
+            <th>@Html.DisplayNameFor(model => model.Manga[0].Genero)</th>
+            <th>@Html.DisplayNameFor(model => model.Manga[0].Descricao)</th>
+            <th>@Html.DisplayNameFor(model => model.Manga[0].CapaManga)</th>
+            <th>@Html.DisplayNameFor(model => model.Manga[0].DtCriacao)</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Manga) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Autor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GeneroId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CapaManga)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UsuarioId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DtCriacao)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.MangaId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.MangaId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.MangaId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Manga)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
+                <td>@Html.DisplayFor(modelItem => item.Autor)</td>
+                <td>@Html.DisplayFor(modelItem => item.Genero)</td>
+                <td>@Html.DisplayFor(modelItem => item.Descricao)</td>
+
+                <!-- Exibindo a Imagem -->
+                <td>
+
+                    @{
+                        string imageSrc = null;
+                    }
+                    @if (item.CapaManga != null)
+                    {
+                        var imageBase64 = Convert.ToBase64String(item.CapaManga);
+                        imageSrc = string.Format("data:image/png;base64,{0}", imageBase64);
+                    }
+                    <img src="@imageSrc" alt="Capa do Manga" style="width: 100px; height: 100px;" />
+                </td>
+
+                <td>@Html.DisplayFor(modelItem => item.DtCriacao)</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.MangaId">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.MangaId">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.MangaId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+

@@ -1,0 +1,49 @@
+@page
+@model MangaUs.Pages.PaginasCRUD.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Pagina[0].NumeroPagina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pagina[0].Capitulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pagina[0].Imagem)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Pagina) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroPagina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capitulo.CapituloId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Imagem)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PaginaId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PaginaId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PaginaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

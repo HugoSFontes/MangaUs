@@ -1,18 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using MangaUs.Data;
 using MangaUs.Models;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace MangaUs.Pages.MangasCRUD
 {
     public class CreateModel : PageModel
     {
         private readonly MangaUs.Data.MangaDbContext _context;
+
+        [BindProperty]
+        public Manga Manga { get; set; }
+
+        // Propriedade para o upload do arquivo
+        [BindProperty]
+        public IFormFile UploadCapa { get; set; }
 
         public CreateModel(MangaUs.Data.MangaDbContext context)
         {
@@ -24,14 +29,25 @@ namespace MangaUs.Pages.MangasCRUD
             return Page();
         }
 
-        [BindProperty]
-        public Manga Manga { get; set; } = default!;
-
-        // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(IFormFile UploadCapa)
         {
             if (!ModelState.IsValid)
             {
+                return Page();
+            }
+
+            // Verifica se há um arquivo e se ele é válido
+            if (UploadCapa != null && UploadCapa.Length > 0)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    await UploadCapa.CopyToAsync(memoryStream);
+                    Manga.CapaManga = memoryStream.ToArray(); // Converte o arquivo para byte[]
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("UploadCapa", "A capa do manga é obrigatória.");
                 return Page();
             }
 
@@ -40,5 +56,6 @@ namespace MangaUs.Pages.MangasCRUD
 
             return RedirectToPage("./Index");
         }
+
     }
 }

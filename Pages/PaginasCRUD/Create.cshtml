@@ -1,0 +1,44 @@
+@page
+@model MangaUs.Pages.PaginasCRUD.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Pagina</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Pagina.NumeroPagina" class="control-label"></label>
+                <input asp-for="Pagina.NumeroPagina" class="form-control" />
+                <span asp-validation-for="Pagina.NumeroPagina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pagina.CapituloId" class="control-label"></label>
+                <select asp-for="Pagina.CapituloId" class ="form-control" asp-items="ViewBag.CapituloId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pagina.Imagem" class="control-label"></label>
+                <input asp-for="Pagina.Imagem" class="form-control" />
+                <span asp-validation-for="Pagina.Imagem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

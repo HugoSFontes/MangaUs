@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using MangaUs.Data;
 using MangaUs.Models;
 
-namespace MangaUs.Pages.MangasCRUD
+namespace MangaUs.Pages.PaginasCRUD
 {
     public class IndexModel : PageModel
     {
@@ -19,12 +19,12 @@ namespace MangaUs.Pages.MangasCRUD
             _context = context;
         }
 
-        
-        public IList<Manga> Manga { get;set; } = default!;
+        public IList<Pagina> Pagina { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            Manga = await _context.Mangas.ToListAsync();
+            Pagina = await _context.Paginas
+                .Include(p => p.Capitulo).ToListAsync();
         }
     }
 }

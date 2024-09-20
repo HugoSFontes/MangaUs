@@ -12,7 +12,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Manga.Titulo" class="control-label"></label>
@@ -25,9 +25,9 @@
                 <span asp-validation-for="Manga.Autor" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Manga.GeneroId" class="control-label"></label>
-                <input asp-for="Manga.GeneroId" class="form-control" />
-                <span asp-validation-for="Manga.GeneroId" class="text-danger"></span>
+                <label asp-for="Manga.Genero" class="control-label"></label>
+                <input asp-for="Manga.Genero" class="form-control" />
+                <span asp-validation-for="Manga.Genero" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Manga.Descricao" class="control-label"></label>
@@ -35,14 +35,14 @@
                 <span asp-validation-for="Manga.Descricao" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Manga.CapaManga" class="control-label"></label>
-                <input asp-for="Manga.CapaManga" class="form-control" />
-                <span asp-validation-for="Manga.CapaManga" class="text-danger"></span>
-            </div>
+                            <label asp-for="UploadCapa" class="control-label"></label>
+                            <input type="file" asp-for="UploadCapa" class="form-control" />
+                            <span asp-validation-for="UploadCapa" class="text-danger"></span>
+                        </div>
             <div class="form-group">
-                <label asp-for="Manga.UsuarioId" class="control-label"></label>
-                <input asp-for="Manga.UsuarioId" class="form-control" />
-                <span asp-validation-for="Manga.UsuarioId" class="text-danger"></span>
+                <label asp-for="Manga.DtCriacao" class="control-label"></label>
+                <input asp-for="Manga.DtCriacao" class="form-control" />
+                <span asp-validation-for="Manga.DtCriacao" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
