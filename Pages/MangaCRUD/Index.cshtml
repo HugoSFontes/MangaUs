@@ -1,0 +1,72 @@
+﻿@page
+@model MangaUS.Pages.MangaCRUD.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Manga[0].Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manga[0].Autor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manga[0].Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manga[0].CapaManga)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manga[0].DtCriacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manga[0].Genero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manga[0].Usuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Manga) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Autor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CapaManga)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DtCriacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genero.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.Email)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.MangaId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.MangaId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.MangaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
