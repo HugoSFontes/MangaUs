@@ -6,10 +6,19 @@
     
 }
 
-<h1>Index</h1>
 
 
-<table class="table" width="100px">
+
+
+
+<div class="container " style="margin-top: 100px;">
+    <h1 class="text-center mb-4" style="color:white">Lista de Mangás</h1>
+    <p>
+        <div class="form-group">
+            <a asp-page="Create" class="btn btn-info">Adicionar Mangá</a>
+        </div>
+    </p>
+<table class="table"   >
     <thead>
         <tr>
             <th>
@@ -17,12 +26,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Manga[0].Autor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Manga[0].Descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Manga[0].CapaManga)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Manga[0].DtCriacao)
@@ -47,12 +50,6 @@
                 @Html.DisplayFor(modelItem => item.Autor)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CapaManga)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.DtCriacao)
             </td>
             <td>
@@ -62,14 +59,24 @@
                 @Html.DisplayFor(modelItem => item.Usuario.Email)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.MangaId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.MangaId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.MangaId">Delete</a>
+                <a class="btn btn-primary btn-sm" asp-page="./Edit" asp-route-id="@item.MangaId">Alterar</a> 
+                <form class="d-inline-block" asp-page-handler="Delete" asp-route-id="@item.MangaId" method="post">
+                    <button class="btn btn-danger btn-sm" onclick="confirmaExclusao(this);"
+                    type="button">Excluir</button>
+                </form>
             </td>
         </tr>
+          
 }
+
+           
     </tbody>
-    <p>
-        <a asp-page="Create" >Create New</a>
-    </p>
+   
 </table>
+    
+</div>
+@section scripts{
+    @{
+        await Html.RenderPartialAsync("_CostumConfirm");
+    }
+}

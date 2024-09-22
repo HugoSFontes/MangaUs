@@ -5,57 +5,71 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<main class="container mt-5">
+    
 
-<h4>Manga</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Manga.Titulo" class="control-label"></label>
-                <input asp-for="Manga.Titulo" class="form-control" />
-                <span asp-validation-for="Manga.Titulo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Manga.Autor" class="control-label"></label>
-                <input asp-for="Manga.Autor" class="form-control" />
-                <span asp-validation-for="Manga.Autor" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Manga.GeneroId" class="control-label"></label>
-                <select asp-for="Manga.GeneroId" class ="form-control" asp-items="ViewBag.GeneroId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Manga.Descricao" class="control-label"></label>
-                <input asp-for="Manga.Descricao" class="form-control" />
-                <span asp-validation-for="Manga.Descricao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Manga.CapaManga" class="control-label"></label>
-                <input asp-for="Manga.CapaManga" class="form-control" />
-                <span asp-validation-for="Manga.CapaManga" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Manga.UsuarioId" class="control-label"></label>
-                <select asp-for="Manga.UsuarioId" class ="form-control" asp-items="ViewBag.UsuarioId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Manga.DtCriacao" class="control-label"></label>
-                <input asp-for="Manga.DtCriacao" class="form-control" />
-                <span asp-validation-for="Manga.DtCriacao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+    <div class="row justify-content-center" style="margin-top: 100px">
+        <div class="col-md-6">
+            <h1 class="text-center mb-4" style="color:white">Adicionar Novo Mangá</h1>
+            <form method="post" >
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                
+
+               
+                <div class="form-group">
+                    <label asp-for="Manga.Titulo" class="control-label font-weight-bold">Título do Mangá</label>
+                    <input asp-for="Manga.Titulo" class="form-control" placeholder="Digite o título do mangá" />
+                    <span asp-validation-for="Manga.Titulo" class="text-danger"></span>
+                </div>
+
+               
+                <div class="form-group">
+                    <label asp-for="Manga.Autor" class="control-label font-weight-bold">Autor</label>
+                    <input asp-for="Manga.Autor" class="form-control" placeholder="Nome do autor" />
+                    <span asp-validation-for="Manga.Autor" class="text-danger"></span>
+                </div>
+
+                
+                <div class="form-group">
+                    <label asp-for="Manga.GeneroId" class="control-label font-weight-bold">Gênero</label>
+                    <select asp-for="Manga.GeneroId" class="form-control" asp-items="ViewBag.GeneroId">
+                        <option value="">Selecione um gênero</option>
+                    </select>
+                    <span asp-validation-for="Manga.GeneroId" class="text-danger"></span>
+                </div>
+
+                
+                <div class="form-group">
+                    <label asp-for="Manga.Descricao" class="control-label font-weight-bold">Descrição</label>
+                    <textarea asp-for="Manga.Descricao" class="form-control" rows="4" placeholder="Escreva uma breve descrição"></textarea>
+                    <span asp-validation-for="Manga.Descricao" class="text-danger"></span>
+                </div>
+
+                
+                <div class="form-group">
+                    <label asp-for="Manga.CapaManga" class="control-label font-weight-bold">Capa do Mangá (URL)</label>
+                    <input asp-for="Manga.CapaManga" class="form-control" placeholder="URL da imagem de capa" />
+                    <span asp-validation-for="Manga.CapaManga" class="text-danger"></span>
+                </div>
+
+                
+                <div class="form-group">
+                    <label asp-for="Manga.DtCriacao" class="control-label font-weight-bold">Data de Publicação</label>
+                    <input asp-for="Manga.DtCriacao" type="date" class="form-control" />
+                    <span asp-validation-for="Manga.DtCriacao" class="text-danger"></span>
+                </div>
+                <p></p>
+
+                
+                <div class="form-group text-center">
+                    <a asp-page="Index" class="btn btn-secondary mr-2">Cancelar</a>
+                    <input type="submit" value="Salvar" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+</main>
 
-<div>
-    <a asp-page="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

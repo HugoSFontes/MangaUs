@@ -3,20 +3,88 @@
   "WorkspaceRootPath": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\usuariocrud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\usuariocrud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\usuariocrud\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\usuariocrud\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\usuariocrud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\usuariocrud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\generocrud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\generocrud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\mangacrud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\mangacrud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\shared\\_tamplate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\shared\\_tamplate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\mangacrud\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\mangacrud\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\shared\\_costumconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\shared\\_costumconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\mangacrud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\mangacrud\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|d:\\documentos\\web 2\\web 2\\mangaus\\models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F366930B-69B6-4E0B-AA88-199CAC599C9F}|MangaUS.csproj|solutionrelative:models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,54 +118,275 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\MangaCRUD\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\MangaCRUD\\Index.cshtml",
-              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\MangaCRUD\\Index.cshtml",
-              "RelativeToolTip": "Pages\\MangaCRUD\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\UsuarioCRUD\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\UsuarioCRUD\\Index.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\UsuarioCRUD\\Index.cshtml",
+              "RelativeToolTip": "Pages\\UsuarioCRUD\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T14:17:24.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAIwCIAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T12:50:45.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Tamplate.cshtml",
-              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Shared\\_Tamplate.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\_Tamplate.cshtml",
-              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Shared\\_Tamplate.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\_Tamplate.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAJYAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T12:49:03.239Z",
+              "WhenOpened": "2024-09-22T22:21:41.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Index.cshtml.cs",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T22:17:20.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Details.cshtml.cs",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Details.cshtml.cs",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Details.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T22:17:19.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Details.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Details.cshtml",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T12:46:12.197Z",
+              "WhenOpened": "2024-09-22T22:17:19.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Edit.cshtml.cs",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Edit.cshtml.cs",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Edit.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T22:17:19.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Edit.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Edit.cshtml",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T22:17:19.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Create.cshtml.cs",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Create.cshtml.cs",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Create.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T22:17:19.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Create.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Create.cshtml",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T22:17:18.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\MangaCRUD\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\MangaCRUD\\Create.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\MangaCRUD\\Create.cshtml",
+              "RelativeToolTip": "Pages\\MangaCRUD\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T22:04:54.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T21:53:29.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T21:53:24.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\UsuarioCRUD\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\UsuarioCRUD\\Create.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\UsuarioCRUD\\Create.cshtml",
+              "RelativeToolTip": "Pages\\UsuarioCRUD\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T21:23:28.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\UsuarioCRUD\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\UsuarioCRUD\\Create.cshtml.cs",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\UsuarioCRUD\\Create.cshtml.cs",
+              "RelativeToolTip": "Pages\\UsuarioCRUD\\Create.cshtml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T21:23:30.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T21:33:02.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Delete.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Delete.cshtml",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T22:17:20.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Delete.cshtml.cs",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Delete.cshtml.cs",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Delete.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T22:17:20.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\GeneroCRUD\\Index.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\GeneroCRUD\\Index.cshtml",
+              "RelativeToolTip": "Pages\\GeneroCRUD\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T22:17:20.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_CostumConfirm.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Shared\\_CostumConfirm.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_CostumConfirm.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\Shared\\_CostumConfirm.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_CostumConfirm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T21:51:39.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\MangaCRUD\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\MangaCRUD\\Index.cshtml",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\MangaCRUD\\Index.cshtml",
+              "RelativeToolTip": "Pages\\MangaCRUD\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAABMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-22T20:56:19.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Genero.cs",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Models\\Genero.cs",
+              "RelativeDocumentMoniker": "Models\\Genero.cs",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Models\\Genero.cs",
+              "RelativeToolTip": "Models\\Genero.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T21:16:48.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\MangaCRUD\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\MangaCRUD\\Index.cshtml.cs",
+              "ToolTip": "D:\\Documentos\\Web 2\\web 2\\MangaUS\\Pages\\MangaCRUD\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\MangaCRUD\\Index.cshtml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAADwvysAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T20:58:42.995Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,27 @@
+﻿<link rel="stylesheet" href="https://cdnj.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css" />
+<script src="https://cdnjjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
+<script>
+    function confirmarExclusao(el) {
+        $.confirm({
+            title: 'Confirmação',
+            contente: 'Deseja realmente excluir?',
+            buttons: {
+                Text: "Não",
+                btnClass: "btn´primary",
+                action: function () {
+                    $.alert('Exclusão cancelar');
+                }
+            },
+            confirm: {
+                text: "Sim",
+                btnClass: "btn-danger",
+                action: function () {
+                    el.form.submit();
+                }
+            }
+
+        });
+    }
+
+</script>

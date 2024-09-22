@@ -27,5 +27,25 @@ namespace MangaUS.Pages.MangaCRUD
                 .Include(m => m.Genero)
                 .Include(m => m.Usuario).ToListAsync();
         }
+        public async Task<IActionResult>OnPostDeleteAsync(int? id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+
+            var manga = await _context.Mangas .FindAsync(id);
+
+            if (manga != null)
+            {
+               _context.Mangas.Remove(manga);
+                await _context.SaveChangesAsync();
+            }
+            return Page();
+
+
+        }
+
+
     }
 }

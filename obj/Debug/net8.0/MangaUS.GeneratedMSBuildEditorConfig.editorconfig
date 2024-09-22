@@ -30,6 +30,26 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/GeneroCRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvQ1JVRFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/GeneroCRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvQ1JVRFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/GeneroCRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvQ1JVRFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/GeneroCRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvQ1JVRFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/GeneroCRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvQ1JVRFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Documentos/Web 2/web 2/MangaUs/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,8 +74,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuZ2FDUlVEXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/MangaCRUD/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuZ2FDUlVEXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Documentos/Web 2/web 2/MangaUs/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/Shared/_CostumConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Db3N0dW1Db25maXJtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documentos/Web 2/web 2/MangaUs/Pages/Shared/_Tamplate.cshtml]
@@ -64,6 +92,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Documentos/Web 2/web 2/MangaUs/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/UsuarioCRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb0NSVURcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/UsuarioCRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb0NSVURcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/UsuarioCRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb0NSVURcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/UsuarioCRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb0NSVURcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/Web 2/web 2/MangaUs/Pages/UsuarioCRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb0NSVURcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documentos/Web 2/web 2/MangaUs/Pages/_ViewImports.cshtml]

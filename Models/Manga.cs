@@ -16,19 +16,19 @@ namespace MangaUs.Models
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
         [MaxLength(100)]
         public string Autor { get; set; }
-        [Required]
+        [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
         public int GeneroId { get; set; }
         [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
         [Column(TypeName = "text")]
         public string Descricao { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
         [MaxLength(255)]
         public string CapaManga { get; set; } 
         [Required]
         [HiddenInput(DisplayValue = false)]
         public int UsuarioId { get; set; }
-        [Required]
+        [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
         [DataType(DataType.Date)]
         [DisplayName("Data de publicação")]
         public DateTime DtCriacao { get; set; }
