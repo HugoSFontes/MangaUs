@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -23,12 +24,13 @@ namespace MangaUs.Models
 
         [Required]
         [MaxLength(255)]
-        [HiddenInput(DisplayValue = false)]
         public string CapaManga { get; set; } 
         [Required]
+        [HiddenInput(DisplayValue = false)]
         public int UsuarioId { get; set; }
         [Required]
         [DataType(DataType.Date)]
+        [DisplayName("Data de publicação")]
         public DateTime DtCriacao { get; set; }
 
         

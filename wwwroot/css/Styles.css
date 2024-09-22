@@ -1,0 +1,199 @@
+﻿body {
+
+}
+.bg-primary-color{
+    background-color: black;
+}
+.primary-color{
+    color: hsl(0, 0%, 100%);
+   
+    
+
+
+}
+
+
+/*NAVBAR*/
+
+#navbar{
+    font-family: "Roboto", Helvetica;
+    font-size: 19px;
+    height: 112px;
+    
+    
+ 
+}
+
+.navbar-nav .nav-link:hover {
+    
+    color: white; 
+  }
+
+#navbar a.active{
+    border-bottom: 1PX solid #ffff;
+    color: #ffff;
+}
+.navbar-nav{
+    gap: 35px;
+}
+
+.navbar-brand{
+    margin-right:  30px;
+}
+
+.search-box{
+    
+    background: #ffff;
+    height: 55px;
+    right: 90px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .4s;
+}
+
+.search-btn{
+    width: 35px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+    
+     
+  
+}
+
+.search-box:hover > .search-txt{
+
+    width: 350px;
+
+
+}
+
+.profile{
+    right: 50px;
+    position: relative;
+   
+}
+
+body{
+    background-color: black;
+}
+
+.carousel-item img {
+    
+    width: 1440px; 
+    height: 714px; 
+    object-fit: cover;
+    object-position: top; 
+    
+    
+  }
+  .overlay {
+    position: absolute;
+   
+    top: 180px;
+    left: 150px;
+    width: 1000px;
+    height: 460px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  .col-md-4 img {
+    width: 327px; 
+    height: 425px;
+    object-fit: cover;
+    left: 50px;
+    top: 20px;
+    position: absolute;
+  }
+  .card{
+    border: none;
+    
+    justify-content: center;
+
+  }
+
+  .card-body{
+    position: absolute;
+    color: aliceblue;
+    height: 278px;
+    width: 570px;
+    top: 111px;
+    left: 400px;
+    text-align: center;
+    background-color:#000000ad;
+    border-radius: 6px;
+    
+  }
+  
+  .card-text{
+    text-align:left;
+    font-size: 20px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 600;
+    
+    
+    
+  }
+  .card-title{
+    font-weight: bold;
+    font-family: "Roboto", Helvetica;
+    font-size: 54px;
+
+  }
+.corpo{
+   background-color: #1f1f1f;
+   
+   height: 1970px;
+
+}
+
+
+ .row_poster{
+    width: 254px;
+    height: 330px;
+    object-fit: cover;
+    margin-right: 50px;
+    transition: transform 450ms;
+ }
+
+ .row_posters{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    
+ }
+ .row_posters :hover{
+    transform: scale(1.08);
+ }
+.row_posterLarge{
+    max-height: 254px;
+}
+.row_posterLarge :hover{
+    transform: scale(1.09);
+}
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+
+
+
+
